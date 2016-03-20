@@ -10,6 +10,7 @@ const PATHS = {
 
 
 module.exports = {
+    devtools: 'sourceMap',
     entry: [
         'webpack-hot-middleware/client',
         './client/index'
