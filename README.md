@@ -8,7 +8,9 @@
 ![img](snap2.png 'preview')
 
 #前后端同构:
+
 font-end: react + redux + react-router + babel + webpack
+
 backend: nodejs + mongodb
 
 #启动
