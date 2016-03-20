@@ -12,8 +12,9 @@ font-end: react + redux + react-router + babel + webpack
 backend: nodejs + mongodb
 
 #启动
-#启动
 ```npm install```
+
 ```npm run build```
+
 ```npm start```
 
