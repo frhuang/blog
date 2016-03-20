@@ -1,0 +1,39 @@
+.blog-create-content {
+  padding-left: 60px;
+  width:80%;
+  h1{
+    color:#a19f98;
+  }
+}
+.form-group{
+  width: 80%;
+  padding: 12px 0;
+  input{
+    width: 99%;
+    padding: 8px 0 8px 10px;
+  }
+  textarea{
+    width: 100%;
+    min-height: 450px;
+    padding: 8px 0 8px 10px;
+  }
+}
+
+.admin-form{
+  width: 80%;
+  padding-top: 10px;
+  button{
+    float:right;
+    background-color: #fff;
+    width: 5em;
+    height: 2em;
+    border-radius: 2px;
+    cursor: pointer;
+    color:#a19f98;
+    opacity: .6;
+    &:hover{
+      color:#20a679;
+      opacity: 1;
+    }
+  }
+}

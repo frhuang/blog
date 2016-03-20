@@ -1,0 +1,29 @@
+#admin-nav {
+  width: 260px;
+  height: 90%;
+  border-right: 1px solid #3f506f;
+  position: absolute;
+  left:0;
+  top: 80px;
+  text-align: center;
+  p{
+    font-size: 2em;
+    a{
+      color: #221d0a;
+    }
+
+  }
+  .admin-nav-item {
+    border-bottom: 1px solid #3f506f;
+    a{
+      display: block;
+      padding: 30px 0;
+      color:#a19f98;
+      cursor: pointer;
+      font-size: 2em;
+      &:hover{
+        color:#20a679;
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+#gf-app{
+  width:100%;
+  height:100%;
+}
+#gf-main{
+  width:100%;
+  height: 100%;
+  overflow:hidden;
+  color: #fff;
+
+  transition: margin-left 0.3s ease-out;
+  &>section, &>.gf-view{
+    width: 100%;
+    height:100%;
+    overflow-y: auto;
+    animation:fade-in 1s ease-out;
+    animation-fill-mode: forwards;
+    // clearfix
+    &:before,
+    &:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+    }
+    &:after {
+      clear: both;
+    }
+
+  }
+}
+
+.sidebar-nav {
+  color: #212220;
+  z-index: 2000;
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 40px;
+  right: 30px;
+  background-color: rgba(0,0,0,.1);
+  border-radius: 50%;
+  -webkit-transition: background-color .3s linear;
+  transition: background-color .3s linear;
+  span:nth-of-type(1) {
+    top: 18px;
+  }
+  span:nth-of-type(2) {
+    top: 25px;
+  }
+  span:nth-of-type(3) {
+    top: 32px;
+  }
+  &>span {
+    display: inline-block;
+    width: 22px;
+    height: 2px;
+    position: absolute;
+    left: 14px;
+    background-color: #fff;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all .6s cubic-bezier(0.165,0.840,0.440,1.000);
+    -moz-transition: all .6s cubic-bezier(0.165,0.840,0.440,1.000);
+    transition: all .6s cubic-bezier(0.165,0.840,0.440,1.000);
+  }
+  &:hover{
+    background-color:#6bc32d;
+  }
+}
+
+.sidebar-nav.close{
+  span:nth-of-type(1){
+    top:25px;
+    -webkit-transform:rotateZ(45deg);
+    -moz-transform:rotateZ(45deg);
+    transform:rotateZ(45deg)
+  }
+  span:nth-of-type(2){
+    opacity:0
+  }
+  span:nth-of-type(3){
+    top:25px;
+    -webkit-transform:rotateZ(-45deg);
+    -moz-transform:rotateZ(-45deg);
+    transform:rotateZ(-45deg)}
+}
+
+#gf-nav{
+  position: absolute;
+  right:-385px;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #fff;
+  z-index: 1000;
+  transition: right 0.3s ease;
+  #gf-nav-main-link{
+    font-size: 2em;
+    padding: 2em 1em 1em;
+    li{
+      margin-bottom: 0.4em;
+    }
+  }
+  #nav-wrap {
+    position: absolute;
+    top: 0;
+    left:-148px;
+    width:150px;
+    height:100%;
+  }
+}
+
+#nav-mask {
+  background-color: rgba(0,0,0,.2);
+  left: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  visibility: hidden;
+}
+
+#nav-mask.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#gf-app.open{
+  #gf-nav{
+    right:0;
+  }
+  #gf-main{
+    margin-left: -100px;
+  }
+}

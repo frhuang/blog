@@ -1,0 +1,68 @@
+#gf-contact{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  .social-link {
+    width: 50%;
+    height: 100%;
+    background-color: #ededed;
+    background-size: cover;
+    position:relative;
+    .about-left-top{
+      background: url("../images/contact.jpg") center center no-repeat;
+      width: 100%;
+      height: 26rem;
+    }
+    .about-left-content{
+      position: absolute;
+      bottom: 10rem;
+      width: 100%;
+      text-align: center;
+      p{
+        font-size: 1.6rem;
+        line-height: .25rem;
+        color: #563d39;
+      }
+      .p-top {
+        padding-top: 20px;
+      }
+      .name-tips{
+        padding-left: 100px;
+      }
+    }
+    .links{
+      position:absolute;
+      bottom: 2em;
+      width: 100%;
+      text-align: center;
+    }
+    .link-icon{
+      display:inline-block;
+      width: 3.3rem;
+      height: 3.3rem;
+      border-radius: 2rem;
+      background-size:cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      opacity:0.5;
+      transition: opacity 0.3s ease-out;
+      &:hover{
+        opacity: 1;
+      }
+    }
+    .icon-github{
+      background-image:url(../images/github.png);
+    }
+    .icon-weibo{
+      background-image:url(../images/Sina_Weibo-512.png);
+    }
+    .icon-zhihu{
+      background-image:url(../images/zhihu.png);
+    }
+  }
+  .contact-form{
+    padding: 150px 60px 0;
+    font-size: 20px;
+    color: #666;
+  }
+}

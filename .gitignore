@@ -1,0 +1,6 @@
+#webstorm config
+.idea
+#package
+/node_modules
+npm-debug.log
+build

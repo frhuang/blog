@@ -1,0 +1,63 @@
+#gf-intro{
+  background-color: #32425C;
+  width: 100%;
+  height: 100%;
+  padding-top: 13%;
+  .gf-centered-wraper{
+    position:relative;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+  }
+  #avatar{
+    background: url(../images/avatar.jpg) center center no-repeat;
+    border-radius: 100%;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto;
+  }
+  #intro-content{
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    h1,h2{
+      text-transform: uppercase;
+      margin:0;
+    }
+    h1{
+      font-size: 4rem;
+    }
+    h2{
+      font-size: 2.5rem;
+    }
+    h3{
+      font-size: 2rem;
+    }
+  }
+  .intro-bg {
+    position: absolute;
+    background-color: #32425C;
+    background-image: url(../images/woods.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .intro-cover{
+    width:100%;
+    height:100%;
+    // background-color: rgba(42,46,57,0.7);
+    background:rgba(42,46,57,0.1) url(../images/pattern.png);
+    position:absolute;
+    top: 0;
+    left:0;
+    z-index: 1;
+  }
+}
+
