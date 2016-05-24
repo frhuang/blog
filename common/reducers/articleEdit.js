@@ -9,7 +9,6 @@ const initialState = {
 };
 
 export default function articleEdit(state = initialState, action={}) {
-    console.log("actionEdit",action);
     switch (action.type) {
         case ARTICLE_EDIT_REQUEST:
             return Object.assign({}, state, {

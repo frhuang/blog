@@ -6,7 +6,7 @@
   }
 }
 .form-group{
-  width: 80%;
+  width: 100%;
   padding: 12px 0;
   input{
     width: 99%;
@@ -20,20 +20,20 @@
 }
 
 .admin-form{
-  width: 80%;
+  width: 100%;
   padding-top: 10px;
-  button{
+  a{
     float:right;
     background-color: #fff;
-    width: 5em;
-    height: 2em;
-    border-radius: 2px;
+    text-align: center;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
     cursor: pointer;
     color:#a19f98;
-    opacity: .6;
     &:hover{
       color:#20a679;
-      opacity: 1;
+      opacity: .8;
     }
   }
 }

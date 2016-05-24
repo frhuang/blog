@@ -6,6 +6,6 @@ export function doLogin(params) {
     console.log(params);
     return {
         type: LOGIN,
-        promise: request.post("http://localhost:8000/login", params)
+        promise: request.post("/login", params)
     }
 }

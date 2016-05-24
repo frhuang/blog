@@ -8,7 +8,8 @@ const initialState = {
     success: false
 }
 
-export default function articledelete(state = initialState, action={}) {
+export default function articleDelete(state = initialState, action={}) {
+    console.log("delete");
     switch (action.type) {
         case ARTICLE_DELETE_REQUEST:
             return Object.assign({}, state, {

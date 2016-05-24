@@ -26,7 +26,7 @@ export default (
             <Route path="about" component={About} />
             <Route path="login" component={Login} />
             <Route path="register" component={Register} />
-            <Route path="blogDetail/:id" component={BlogDetail} />
+            <Route path="blog/:id" component={BlogDetail} />
         </Route>
         <Route path="/admin" component={AdminIndex}>
             <IndexRoute component={ArticleLists} />

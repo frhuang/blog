@@ -8,7 +8,7 @@ const Blog = mongoose.model('Blog');
 
 const jsonParser = bodyParser.json();
 
-module.exports= function (app) {
+module.exports = function (app) {
     app.use("/articleDelete", router);
 };
 

@@ -33,18 +33,18 @@ class CreateArticle extends Component {
     render() {
         return (
             <div className="blog-create-content">
-                <h1>create article</h1>
+                <h1>新文章</h1>
                 <div className="form-group">
-                    <input type="text" name="title" placeholder="title" ref="titleInput" />
+                    <input type="text" name="title" placeholder="标题" ref="titleInput" />
                 </div>
                 <div className="form-group">
-                    <input type="text" name="describe" placeholder="describe" ref="desInput" />
+                    <input type="text" name="describe" placeholder="描述" ref="desInput" />
                 </div>
                 <div className="form-group">
-                    <textarea placeholder="content" name="content" id="md_editor" ref="contentInput"></textarea>
+                    <textarea placeholder="内容" name="content" id="md_editor" ref="contentInput"></textarea>
                 </div>
                 <div className="admin-form">
-                    <button onClick={this.handleSubmit.bind(this)}>publish</button>
+                    <a href="javascript:void(0)" onClick={this.handleSubmit.bind(this)}>发表</a>
                 </div>
             </div>
         )

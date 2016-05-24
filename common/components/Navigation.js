@@ -35,7 +35,6 @@ export default class Navigation extends Component {
                               onClick={this.eventCloseSidebar.bind(this)}>About</Link>
                     </li>
                 </ul>
-                <div id="nav-wrap" dangerouslySetInnerHTML={{__html: svgString }}></div>
             </nav>
         )
     }

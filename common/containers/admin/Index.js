@@ -6,10 +6,9 @@ import AdminHeader from '../../components/admin/AdminHeader';
 export default class Index extends Component {
     render() {
         return (
-            <div id="admin-index">
-                <AdminHeader />
+            <div className="admin-index">
                 <AdminNav />
-                <div id="admin-main">
+                <div className="admin-container">
                     {this.props.children}
                 </div>
             </div>

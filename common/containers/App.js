@@ -24,9 +24,9 @@ class App extends Component {
                 <div id="gf-main">
                     {this.props.children}
                 </div>
-                <Navigation layout={layout} toggleSidebar={actions.toggleSidebar} />
                 <div id="nav-mask" className={activeClass}></div>
                 <Navtoggle layout={layout} toggleSidebar={actions.toggleSidebar} />
+                <Navigation layout={layout} toggleSidebar={actions.toggleSidebar} />
             </div>
         )
     }

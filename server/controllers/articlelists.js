@@ -16,5 +16,5 @@ router.post('/', jsonParser, (req, res) => {
     Blog.find( (err, articles) => {
         if(err) throw err;
         res.status(200).json(articles);
-    })
+    });
 });

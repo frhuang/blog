@@ -6,7 +6,7 @@ const PATHS = {
     common: path.join(__dirname, 'common'),
     build: path.join(__dirname, 'build'),
     node_modules: path.join(__dirname, 'node_modules')
-}
+};
 
 
 module.exports = {

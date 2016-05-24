@@ -10,9 +10,9 @@ export default class BlogBar extends Component {
         console.log(article);
         return (
             <div className="blog-article">
-                <Link to={"/blogDetail/"+article._id} className="article-title">{article.title}</Link>
+                <Link to={"/blog/"+article._id} className="article-title">{article.title}</Link>
                 <p className="article-time">{article.create_time}</p>
-                <Link to={"/blogDetail/"+article._id} className="article-title">
+                <Link to={"/blog/"+article._id} className="article-title">
                     <span className="article-describe">{article.describe}</span>
                 </Link>
                 <hr clasaName="article-line" />

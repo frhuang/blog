@@ -53,9 +53,6 @@ class BLog extends Component {
                         })
                     }
                 </div>
-                <div className="blog-sort">
-                    <Link to="blog">博客归档</Link>
-                </div>
                 <BlogFooter />
             </div>
         )

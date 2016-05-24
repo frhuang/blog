@@ -15,8 +15,10 @@ class ArticleLists extends Component {
     }
     componentWillReceiveProps(nextProps) {
         const { articleInfo } = nextProps;
-
         const { isFetching, articles } = articleInfo;
+
+        console.log('receive');
+
         this.setState({
             isFetching: isFetching,
             articles: articles
@@ -26,8 +28,8 @@ class ArticleLists extends Component {
         const { actions, articleInfo } = this.props;
         const { isFetching, articles } = articleInfo;
         return (
-           <div id="article-lists">
-               <div className="article-operate"><Link to="/admin/create">+/add</Link></div>
+           <div className="article-lists">
+               <div className="article-operate"><Link to="/admin/create">新文章</Link></div>
                <div className="article-content">
                    {
                        isFetching && articles.length === 0 &&

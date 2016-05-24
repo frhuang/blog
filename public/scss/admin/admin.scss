@@ -1,49 +1,67 @@
-#admin-index{
+.admin-index{
   width: 100%;
   height: 100%;
-  background-color: #223344;
-  position: absolute;
-  overflow-y: scroll;
+  background:#f5f5f5;
+  overflow: hidden;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  display: flex;
+}
+.admin-container{
+  width: 80%;
+  height: 100%;
+  -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;         /* OLD - Firefox 19- */
   overflow-x: hidden;
+  -webkit-flex: 1;          /* Chrome */
+  -ms-flex: 1;              /* IE 10 */
+  flex: 1;
 }
 
-#admin-main {
-  position: absolute;
-  width: 100%;
-  left: 260px;
-  top: 80px;
-}
+.article-lists {
 
-#article-lists {
-  width: 100%;
-  position: relative;
   .article-content{
-    width: 100%;
-    border-top: 1px solid #3f506f;
-    position: relative;
-    height: auto;
+    background: #fff;
+    width: 94%;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
     .article-block{
-      padding: 5px 30px;
-      border-bottom: 1px solid $border-bottom-color;
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
       color:$color-nav-hover;
-      font-size: 1.5em;
       position: relative;
+      font-size: 20px;
+      line-height: 20px;
       .list-title{
-        line-height: 0.2em;
-        p:nth-of-type(2) {
-          font-size: .7em;
+        padding: 8px 30px;
+        font-size: 20px;
+        a{
+          color:#5F6369;
+          &:hover{
+            color:$color-nav-hover;
+          }
+        }
+        p{
+          margin: 0;
+          font-size: 14px;
+          padding-top: 5px;
+          padding-left: 5px;
           color:$color-nav;
         }
       }
       .list-button{
         position: absolute;
-        right: 25%;
+        right: 10px;
         top: 20px;
         button{
           margin-left: 20px;
           color:$color-nav;
           border-radius: 2px;
-          font-size: .6em;
+          font-size: .7em;
           opacity: .7;
           &:hover{
             color:$color-nav-hover;
@@ -57,7 +75,7 @@
     padding: 15px;
     a{
       color:$color-nav;
-      font-size: 2em;
+      font-size: 1.4em;
       &:hover{
         color:$color-nav-hover;
       }

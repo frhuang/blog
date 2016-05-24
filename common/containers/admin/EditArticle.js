@@ -72,7 +72,7 @@ class EditArticle extends Component {
                               ref="contentInput"></textarea>
                 </div>
                 <div className="admin-form">
-                    <button onClick={this.handleSubmit.bind(this)}>update</button>
+                    <a href="javascript:void(0)" onClick={this.handleSubmit.bind(this)}>更新</a>
                 </div>
             </div>
         )

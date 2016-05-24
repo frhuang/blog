@@ -4,7 +4,7 @@ import { REGISTER } from '../constants';
 function handleRegister(params) {
     return {
         type: REGISTER,
-        promise: request.post("http://localhost:8000/reg",params)
+        promise: request.post("/reg",params)
     }
 }
 
