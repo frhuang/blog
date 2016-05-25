@@ -8,9 +8,6 @@ export default class ArticleTitle extends Component {
     constructor(props){
         super(props);
     }
-    componentWillReceiveProps(nextProps) {
-        console.log(nextProps);
-    }
     handleEdit(e) {
         e.preventDefault();
         var isOk = confirm('确定编辑?');
@@ -33,7 +30,7 @@ export default class ArticleTitle extends Component {
         return (
             <div className="article-block">
                 <div className="list-title">
-                    <Link to={"/blog/"+article._id}>{article.title}</Link>
+                    <Link to={"/blog/"+article._id} target="_blank">{article.title}</Link>
                     <p>{article.create_time}</p>
                 </div>
                 <div className="list-button">

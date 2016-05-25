@@ -4,7 +4,7 @@ import * as editActions from '../../actions/article';
 import { bindActionCreators } from 'redux';
 
 class EditArticle extends Component {
-    static ContextTypes = {
+    static contextTypes = {
         router: PropTypes.object.isRequired
     }
     constructor(props) {
@@ -53,7 +53,7 @@ class EditArticle extends Component {
     render() {
         return (
             <div className="blog-create-content">
-                <h1>edit article</h1>
+                <h1>编辑文章</h1>
                 <div className="form-group">
                     <input type="text"
                            name="title"
@@ -77,9 +77,6 @@ class EditArticle extends Component {
             </div>
         )
     }
-}
-EditArticle.contextTypes = {
-    router: React.PropTypes.object.isRequired
 }
 export default connect(
         state => ({

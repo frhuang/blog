@@ -8,6 +8,7 @@ import articleEdit from './articleEdit';
 import login from './login';
 import register from './register';
 import publish from './publish';
+import fileUpload from './fileUpload';
 import { routerReducer } from 'react-router-redux'
 
 const rootReducer = combineReducers({
@@ -15,6 +16,7 @@ const rootReducer = combineReducers({
     login,
     register,
     publish,
+    fileUpload,
     articleLists,
     articleDelete,
     articleDetail,

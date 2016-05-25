@@ -13,8 +13,12 @@ import ArticleLists from '../containers/admin/ArticleLists';
 import Login from '../containers/admin/LoginPage';
 import Register from '../containers/admin/Register';
 import CreateArticle from '../containers/admin/CreateArticle';
-import AdminLabs from '../containers/admin/AdminLabs';
 import EditArticle from '../containers/admin/EditArticle';
+import LabsLists from '../containers/admin/LabsLists';
+import LabsCreate from '../containers/admin/LabsCreate';
+import LabsEdit from '../containers/admin/LabsEdit';
+import Upload from '../containers/admin/Upload';
+
 
 export default (
     <Router>
@@ -32,7 +36,8 @@ export default (
             <IndexRoute component={ArticleLists} />
             <Route path="/admin/create" component={CreateArticle} />
             <Route path="/admin/edit/:id" component={EditArticle} />
-            <Route path="/admin/labs" component={AdminLabs} />
+            <Route path="/admin/labs" component={LabsLists} />
+            <Route path="/admin/upload" component={Upload} />
         </Route>
         <Route path="*" component={NoFound} />
     </Router>

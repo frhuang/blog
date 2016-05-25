@@ -1,24 +1,21 @@
 import express from 'express';
 import  mongoose from 'mongoose';
 import bodyParser from 'body-parser';
-import showdown from 'showdown';
-
-const converter = new showdown.Converter();
 
 const  router = express.Router();
 
-const Blog = mongoose.model('Blog');
+const Labs = mongoose.model('Labs');
 
 const jsonParser = bodyParser.json();
 
-module.exports= function (app) {
-    app.use("/articleEdit", router);
+module.exports = function (app) {
+    app.use("/labsDetail", router);
 };
 
 router.post('/', jsonParser, (req, res) => {
     const { id } = req.body;
-    Blog.findByIdAndUpdate(id, req.body, (err) => {
+    Labs.findById(id, (err, article) => {
         if(err) throw err;
-        res.status(200).json({editSuccess: true});
+        res.status(200).json(article);
     })
 });
